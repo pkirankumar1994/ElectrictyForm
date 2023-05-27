@@ -1,0 +1,138 @@
+.admin-dashboard {
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.electricity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.electricity-table th,
+.electricity-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.electricity-table th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.electricity-table tr {
+  background-color: #eee;
+}
+
+.electricity-table button {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.electricity-table button:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .admin-dashboard {
+    padding: 1rem;
+  }
+
+  .electricity-table th,
+  .electricity-table td {
+    padding: 0.25rem;
+  }
+
+  .electricity-table button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .electricity-table {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .electricity-table thead,
+  .electricity-table tbody,
+  .electricity-table th,
+  .electricity-table td,
+  .electricity-table tr {
+    display: block;
+  }
+
+  .electricity-table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+  }
+
+  .electricity-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .electricity-table td:before {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 45%;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .electricity-table td:nth-of-type(1):before {
+    content: "ID: ";
+  }
+
+  .electricity-table td:nth-of-type(2):before {
+    content: "Meter Number:";
+  }
+
+  .electricity-table td:nth-of-type(3):before {
+    content: "Owner Name:";
+  }
+
+  .electricity-table td:nth-of-type(4):before {
+    content: "Date:";
+  }
+
+  .electricity-table td:nth-of-type(5):before {
+    content: "Time:";
+  }
+
+  .electricity-table td:nth-of-type(6):before {
+    content: "Meter Reading:";
+  }
+
+  .electricity-table td:nth-of-type(7):before {
+    content: "House Number:";
+  }
+
+  .electricity-table td:nth-of-type(8):before {
+    content: "Phone Number:";
+  }
+
+  .electricity-table td:nth-of-type(9):before {
+    content: "Adhar Number:";
+  }
+
+  .electricity-table td:last-child {
+    padding-right: 1rem;
+  }
+
+  .electricity-table thead {
+    display: none;
+  }
+}

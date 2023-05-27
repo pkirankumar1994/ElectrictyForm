@@ -1,0 +1,1 @@
+powershell -noexit -executionpolicy bypass -File "C:\Users\KIRAN\Desktop\ElectrictyForm\ElectrictyForm\runpythonapi.ps1"
